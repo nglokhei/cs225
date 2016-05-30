@@ -1,0 +1,27 @@
+Grading r16657 by lng8 committed on Sat Feb 20 17:41:47 CST 2016
+Monad Autograder
+Testing lab_inheritance at 2016-02-22 01:14:56
+
+"I'm not saying he's evil incarnate based on that fact alone; I've always known it." ~ REDACTED
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_virtual_perim  . . . . . . [10 pts] - passed
+test_virtual_area . . . . . . . [10 pts] - passed
+test_destructor (asan)  . . . . [20 pts] - passed
+test_constructor  . . . . . . . [10 pts] - passed
+test_drawable_destructor (asan) [10 pts] - passed
+test_truck_draw . . . . . . . . [10 pts] - passed
+test_slicing  . . . . . . . . . [20 pts] - passed
+test_flower_destructor (asan) . [10 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

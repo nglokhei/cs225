@@ -1,0 +1,24 @@
+Grading r9134 by lng8 committed on Sat Feb  6 03:31:48 CST 2016
+Monad Autograder
+Testing lab_memory at 2016-02-08 00:19:21
+
+"Ridiculous!" ~ Kyle Johnson
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_constructor (asan) [5 pts]  - passed
+test_allocate (asan)  . [5 pts]  - passed
+test_printrooms (asan)  [20 pts] - passed
+test_any_output . . . . [30 pts] - passed
+test_correct_output . . [40 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

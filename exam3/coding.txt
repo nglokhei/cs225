@@ -1,0 +1,120 @@
+################################
+##                            ##
+##     Grading question 9     ##
+##                            ##
+################################
+> :: Compiling...
+> g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function   -c -o binarytree_q9.o binarytree_q9.cpp
+> :: Compiled successfully!
+> :: Trying to compile binarytree_q10.cpp...
+> g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function   -c -o binarytree_q10.o binarytree_q10.cpp
+> binarytree_q10.cpp:13: error: prototype for 'void BinaryTree::makeBST(std::vector<int, std::allocator<int> >, BinaryTree::Node*&)' does not match any in class 'BinaryTree'
+> binarytree.h:109: error: candidates are: void BinaryTree::makeBST(std::vector<int, std::allocator<int> >, BinaryTree::Node*)
+> binarytree_q10.cpp:3: error:                 void BinaryTree::makeBST(std::vector<int, std::allocator<int> >)
+> make: *** [binarytree_q10.o] Error 1
+> Could not compile binarytree_q10.o, not using for linking.
+> :: Compiling provided code...
+> 
+> :: Compiling test_empty.
+> :: Running test_empty.
+> Finding frequency of 3 in:
+> (empty)
+> Result:   0
+> Expected: 0
+> :: Passed test_empty.
+> 
+> :: Compiling test_single.
+> :: Running test_single.
+> Finding frequency of 10 in:
+>  10
+> Result:   1
+> Expected: 1
+> :: Passed test_single.
+> 
+> :: Compiling test_bst1.
+> :: Running test_bst1.
+> Finding frequency of 30 in:
+>                         ______ 21 _____
+>                  ______/               \______
+>             __ 18 _                         __ 30 _
+>          __/       \__                   __/       \__
+>        16              20              21              30
+>      /   \           /   \               \               \
+>    2       16      18      20              24              45
+>   / \       \       \       \             / \             / \
+>  1   4       17      19      20          21  24          30  45
+> Result:   3
+> Expected: 3
+> :: Passed test_bst1.
+> 
+> :: Compiling test_multi1.
+> :: Running test_multi1.
+> Finding frequency of 50 in:
+>                                           ______________ 80 _____________
+>                            ______________/                               \______________
+>                   ______ 16 _____                                                 ______ 50 _____
+>            ______/               \______                                   ______/               \______
+>       __ 75 _                         __ 50 _                         __ 50 _                            51 _
+>    __/       \__                   __/       \__                   __/       \__                             \__
+>  33              33              94              33              61              20                              31
+>                                /                   \           /   \                                               \
+>                              66                      27      67      72                                              70
+>                               \
+>                                25
+> Result:   3
+> Expected: 3
+> :: Passed test_multi1.
+> 
+> :: Compiling test_multi2.
+> :: Running test_multi2.
+> Finding frequency of 20 in:
+>                                           ______________ 13 _____________
+>                            ______________/                               \______________
+>                   ______ 20 _____                                                 ______ 99 _____
+>            ______/               \______                                   ______/               \______
+>       __ 73                           __ 26 _                         __ 17                           __ 20 _
+>    __/                             __/       \__                   __/                             __/       \__
+>  9                               20              20              0                               20              18
+>                                /               /               /                                               /   \
+>                              20              96              20                                              38      78
+>                             /                                                                                 \
+>                            79                                                                                  63
+> Result:   7
+> Expected: 7
+> :: Passed test_multi2.
+> 
+> :: Compiling test_multi3.
+> :: Running test_multi3.
+> Finding frequency of 78 in:
+>                                               ______________ 12 _____________
+>                                ______________/                               \______________
+>                       ______ 49 _____                                                 ______ 15 _____
+>                ______/               \______                                   ______/               \______
+>           __ 28 _                            26 _                         __ 41 _                         __ 1
+>        __/       \__                             \__                   __/       \__                   __/
+>      8               26                              34              30              23              34
+>    /   \                                           /   \                           /   \
+>  17      12                                      39      3                       6       7
+>                                                                                         /
+>                                                                                        10
+> Result:   0
+> Expected: 0
+> :: Passed test_multi3.
+Grade for question 9: 100/100
+
+#################################
+##                             ##
+##     Grading question 10     ##
+##                             ##
+#################################
+> :: Compiling...
+> g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function   -c -o binarytree_q10.o binarytree_q10.cpp
+> binarytree_q10.cpp:13: error: prototype for 'void BinaryTree::makeBST(std::vector<int, std::allocator<int> >, BinaryTree::Node*&)' does not match any in class 'BinaryTree'
+> binarytree.h:109: error: candidates are: void BinaryTree::makeBST(std::vector<int, std::allocator<int> >, BinaryTree::Node*)
+> binarytree_q10.cpp:3: error:                 void BinaryTree::makeBST(std::vector<int, std::allocator<int> >)
+> make: *** [binarytree_q10.o] Error 1
+> Could not compile binarytree_q10.cpp.
+Grade for question 10: 0/100
+
+
+Total score: 100*0.14 + 0*0.06 = 14/20

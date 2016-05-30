@@ -1,0 +1,40 @@
+#########################################
+##                                     ##
+##     Grading question exam4-heap     ##
+##                                     ##
+#########################################
+:: Compiling...
+g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function -o heap.o heap_wrapper.cpp
+:: Compiled successfully!
+:: Compiling provided code...
+
+:: Compiling test_empty.
+:: Running test_empty.
+Building a MinHeap from the partial heap: [-1, -1]
+Result:   [-1, -1]
+Expected: [-1, -1]
+:: Passed test_empty.
+
+:: Compiling test_single.
+:: Running test_single.
+Building a MinHeap from the partial heap: [-1, -1, 300]
+Result:   [-1, -1, 300]
+Expected: [-1, 299, 300]
+:: Failed test_single.
+
+:: Compiling test_case1.
+:: Running test_case1.
+Building a MinHeap from the partial heap: [-1, -1, 300, 299]
+Result:   [-1, 299, 300, 299]
+Expected: [-1, 298, 300, 299]
+:: Failed test_case1.
+
+:: Compiling test_case2.
+:: Running test_case2.
+Building a MinHeap from the partial heap: [-1, -1, -1, -1, 40, 50, 60, 70]
+Result:   [-1, 38, 39, 59, 40, 50, 60, 70]
+Expected: [-1, 38, 39, 59, 40, 50, 60, 70]
+:: Passed test_case2.
+
+Grade for question exam4-heap: 60/100
+

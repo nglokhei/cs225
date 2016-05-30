@@ -1,0 +1,24 @@
+Grading r42028 by lng8 committed on Fri Apr 22 17:39:10 CDT 2016
+Monad Autograder
+Testing mp7.1 at 2016-04-27 00:20:09
+
+"Be careful about using the following code -- I've only proven that it works, I haven't tested it." ~ Donald Knuth
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+addElements1 . . . . [20 pts] - passed
+addElements2 . . . . [20 pts] - passed
+testFindAndSetUnion1 [20 pts] - passed
+testFindAndSetUnion2 [20 pts] - passed
+testFindAndSetUnion3 [20 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

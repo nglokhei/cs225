@@ -1,0 +1,94 @@
+CS 225 Final Grade Report
+
+Point breakdown:
+
+10% | Labs       | 1% each
+13% | MPs        | 0.5% mp1 and hw0; 2% for mp2 through mp7
+45% | Exams      | 15% each
+32% | Final Exam |
+
+                           ~ ~ ~ Labs ~ ~ ~
+                lab_intro    100.0/100.0   monad: 100  attendance: 100
+                lab_debug     33.0/100.0   monad:      attendance: 100
+               lab_memory    100.0/100.0   monad: 100  attendance: 100
+                  lab_gdb    100.0/100.0   monad: 100  attendance: 100
+          lab_inheritance    100.0/100.0   monad: 100  attendance: 100
+               lab_quacks    116.8/100.0   monad: 125  attendance: 100
+                lab_trees    116.8/100.0   monad: 125  attendance: 100
+                 lab_dict    100.0/100.0   monad: 100  attendance: 100
+              lab_huffman    100.0/100.0   monad: 100  attendance: 100
+                  lab_avl    100.0/100.0   monad: 100  attendance: 100
+                 lab_hash     67.0/100.0   monad: 100  attendance:   0
+                lab_heaps    100.0/100.0   monad: 100  attendance: 100
+               lab_graphs     67.0/100.0   monad: 100  attendance:   0
+               ----------
+                lab total     10.0/ 10.0
+                   lab ec      2.0/  0.0
+
+                           ~ ~ ~ MPs ~ ~ ~
+                      hw0     95.0/100.0
+                      mp1    100.0/100.0
+                      mp2     95.0/100.0   extra credit: 100
+                      mp3    100.0/100.0   extra credit: 100
+                      mp4     96.0/100.0   extra credit:  93
+                      mp5    100.0/100.0   extra credit: 100
+                      mp6    100.0/100.0   extra credit: 100
+                      mp7     90.0/100.0   extra credit: 100
+               ----------
+                 mp total     12.6/ 13.0
+                    mp ec      5.9/  0.0
+
+                          ~ ~ ~ Exams ~ ~ ~
+                    exam1     60.0/100.0
+ exam2_coding1 (ordering)      7.5/ 10.0
+    exam2_coding2 (lists)     10.0/ 10.0
+                 exam2_mc      5.0/ 12.0
+                    exam2     77.5/100.0   60*min(8, mc)/8 + 40*min(10, coding1+coding2)/10
+                exam2_raw    107.5/170.0   60*mc/8 + 40*(coding1+coding2)/10  [used for ec]
+     exam3_coding1 (easy)     14.0/ 14.0
+     exam3_coding2 (hard)      0.0/  6.0
+                 exam3_mc     27.0/ 30.0
+                    exam3     82.0/100.0   2 * (mc + coding1 + coding2)
+     exam4_coding1 (heap)     12.0/ 20.0
+     exam4_coding2 (dict)      1.0/  1.0
+                 exam4_mc     30.0/ 30.0
+                    exam4     84.0/100.0   2 * (mc + coding1)
+               ----------
+               exam total     36.5/ 45.0   doesn't include exam 1
+
+                    ~ ~ ~ Final Exam (#342) ~ ~ ~
+                      C++      9.5/ 10.0
+                Induction     10.0/ 10.0
+                k-d Trees     14.0/ 15.0
+                   Graphs     20.0/ 20.0
+              More Graphs     15.0/ 15.0
+          Multiple Choice     27.0/ 30.0
+                  overall     95.5/100.0   sum of the above
+               ----------
+         final exam total     30.6/ 32.0
+
+                ~ ~ ~ Overall Grade (without EC) ~ ~ ~
+                lab total     10.0/ 10.0
+                 mp total     12.6/ 13.0
+               exam total     36.5/ 45.0
+         final exam total     30.6/ 32.0
+               ----------
+            overall total     89.7/100.0
+
+                       ~ ~ ~ Extra Credit ~ ~ ~
+                   lab ec      2.0/  0.0
+                    mp ec      5.9/  0.0
+           Robert's study      1.0/  0.0
+         class transcribe      0.0/  0.0   count: 0; 0.5% each, capped at 1%
+                    exam1      0.6/  0.0   exam1 scaled to 1%
+                    exam2      0.4/  0.0   (exam2_raw - exam2) scaled to 1%
+                    exam4      1.0/  0.0   exam4_coding2 scaled to 1%
+               ----------
+                 ec total     11.0/  0.0
+
+                      ~ ~ ~ Overall Grade ~ ~ ~
+            overall total     89.7/100.0
+                 ec total     11.0/  0.0
+               ----------
+  overall total (with ec)    100.6/100.0
+

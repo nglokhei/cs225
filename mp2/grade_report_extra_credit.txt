@@ -1,0 +1,26 @@
+Grading r7208 by lng8 committed on Tue Feb  2 01:03:09 CST 2016
+Monad Autograder
+Testing mp2.1 at 2016-02-03 00:34:35
+
+"I just don't trust easily, and for good reasons... which are my own." ~ Carth Onasi
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+InvertColorsEven  . . [30 pts] - passed
+FlipLeftEven  . . . . [15 pts] - passed
+FlipLeftOdd . . . . . [15 pts] - passed
+AdjustBrightnessEven  [10 pts] - passed
+AdjustBrightnessEven2 [10 pts] - passed
+AdjustBrightnessEven3 [10 pts] - passed
+ImageMakefile . . . . [10 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

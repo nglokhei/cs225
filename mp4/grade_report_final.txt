@@ -1,0 +1,137 @@
+Grading r24832 by lng8 committed on Fri Mar 11 15:38:44 CST 2016
+Monad Autograder
+Testing mp4 at 2016-03-12 00:49:48
+
+"There's an old story about the person who wished his computer were as easy to use as his telephone. That wish has come true, since I no longer know how to use my telephone." ~ Bjarne Stroustrup
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testStackPushPeek  . . . . . . . [1 pts] - passed
+testStackPushPop . . . . . . . . [1 pts] - passed
+testStackManyPushesPeek  . . . . [1 pts] - passed
+testStackManyPushesTwoPops . . . [1 pts] - passed
+testStackManyOperations  . . . . [1 pts] - passed
+testStackDuplicateElements . . . [1 pts] - passed
+testQueueEnqueuePeek . . . . . . [1 pts] - passed
+testQueueEnqueueDequeue  . . . . [1 pts] - passed
+testQueueManyEnqueuesPeek  . . . [1 pts] - passed
+testQueueManyEnqueuesTwoDequeues [1 pts] - passed
+testQueueManyOperations  . . . . [1 pts] - passed
+stack_peek_1 . . . . . . . . . . [1 pts] - passed
+stack_pop_peek_1 . . . . . . . . [1 pts] - passed
+stack_pop_2  . . . . . . . . . . [2 pts] - passed
+stack_isEmpty_1  . . . . . . . . [1 pts] - passed
+stack_isEmpty_2  . . . . . . . . [1 pts] - passed
+stack_push_pop_isEmpty . . . . . [2 pts] - passed
+stack_push_and_pop . . . . . . . [2 pts] - passed
+queue_peek_1 . . . . . . . . . . [1 pts] - passed
+queue_dequeue_peek_1 . . . . . . [2 pts] - passed
+queue_dequeue_2  . . . . . . . . [2 pts] - passed
+queue_isEmpty_1  . . . . . . . . [1 pts] - passed
+queue_isEmpty_2  . . . . . . . . [1 pts] - passed
+queue_enqueue_dequeue_isEmpty  . [2 pts] - passed
+queue_enqueue_and_dequeue  . . . [2 pts] - passed
+testThroughStackQueue  . . . . . [2 pts] - passed
+testEnqueueConstantTime  . . . . [2 pts] - passed
+testDequeueConstantTime  . . . . [2 pts] - FAILED: unit_tests.cpp:444: Runtime was larger than O(nlogn)
+testEnqueuePeekDequeueTime . . . [2 pts] - FAILED: unit_tests.cpp:454: Runtime was larger than O(nlogn)
+solid_picker_15  . . . . . . . . [4 pts] - passed
+gradient_picker_16 . . . . . . . [4 pts] - passed
+gradient_picker_17 . . . . . . . [4 pts] - passed
+DFS_solid  . . . . . . . . . . . [4 pts] - passed
+BFS_solid  . . . . . . . . . . . [4 pts] - passed
+DFS_grid . . . . . . . . . . . . [4 pts] - passed
+BFS_grid . . . . . . . . . . . . [4 pts] - passed
+DFS_gradient . . . . . . . . . . [4 pts] - passed
+BFS_gradient . . . . . . . . . . [4 pts] - passed
+DFS_18 . . . . . . . . . . . . . [2 pts] - passed
+DFS_19 . . . . . . . . . . . . . [2 pts] - passed
+DFS_20 . . . . . . . . . . . . . [2 pts] - passed
+DFS_21 . . . . . . . . . . . . . [2 pts] - passed
+DFS_22 . . . . . . . . . . . . . [2 pts] - passed
+DFS_23 . . . . . . . . . . . . . [2 pts] - passed
+BFS_24 . . . . . . . . . . . . . [2 pts] - passed
+BFS_25 . . . . . . . . . . . . . [2 pts] - passed
+BFS_26 . . . . . . . . . . . . . [2 pts] - passed
+BFS_27 . . . . . . . . . . . . . [2 pts] - passed
+BFS_28 . . . . . . . . . . . . . [2 pts] - passed
+BFS_29 . . . . . . . . . . . . . [2 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 96
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+testDequeueConstantTime [2 points]
+Result: FAILED: unit_tests.cpp:444: Runtime was larger than O(nlogn)
+Took 9348ms (15000ms timeout)
+Output:
+----------------------------------------------------------------
+Input size 10: 82210 iterations in 1000 ms for an average of 12.1642 us per call
+Input size 50: 3550 iterations in 1002 ms for an average of 282.373 us per call
+Input size 100: 910 iterations in 1009 ms for an average of 1109.43 us per call
+Input size 200: 230 iterations in 1020 ms for an average of 4434.92 us per call
+Fitting time: O(1)
+RMS Residual: 1764.66
+Fitting time: O(logn)
+RMS Residual: 1077.23
+Fitting time: O(n)
+RMS Residual: 427.514
+Fitting time: O(nlogn)
+RMS Residual: 321.678
+Fitting time: O(n^2)
+RMS Residual: 1.68918
+Fitting time: O(n^3)
+RMS Residual: 205.666
+Fitting time: O(e^n)
+RMS Residual: 457.376
+Fitting time: O(never)
+RMS Residual: -nan
+Detected best time: O(n^2)
+Best RMS Residual: 1.68918
+
+----------------------------------------------------------------
+testEnqueuePeekDequeueTime [2 points]
+Result: FAILED: unit_tests.cpp:454: Runtime was larger than O(nlogn)
+Took 5489ms (15000ms timeout)
+Output:
+----------------------------------------------------------------
+Input size 10: 40100 iterations in 1000 ms for an average of 24.9399 us per call
+Input size 50: 1810 iterations in 1001 ms for an average of 553.31 us per call
+Input size 100: 460 iterations in 1014 ms for an average of 2204.54 us per call
+Input size 200: 120 iterations in 1073 ms for an average of 8949.69 us per call
+Fitting time: O(1)
+RMS Residual: 3565.49
+Fitting time: O(logn)
+RMS Residual: 2186.43
+Fitting time: O(n)
+RMS Residual: 876.758
+Fitting time: O(nlogn)
+RMS Residual: 663.198
+Fitting time: O(n^2)
+RMS Residual: 13.9272
+Fitting time: O(n^3)
+RMS Residual: 402.166
+Fitting time: O(e^n)
+RMS Residual: 909.931
+Fitting time: O(never)
+RMS Residual: -nan
+Detected best time: O(n^2)
+Best RMS Residual: 13.9272
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 96
+

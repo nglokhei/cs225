@@ -1,0 +1,68 @@
+#########################################
+##                                     ##
+##     Grading question exam4-dict     ##
+##                                     ##
+#########################################
+:: Compiling...
+g++ -std=c++0x -c -g -O0 -Wall -Wextra -Wno-unused-function   -c -o dict.o dict.cpp
+:: Compiled successfully!
+:: Compiling provided code...
+
+:: Compiling test_alldups.
+:: Running test_alldups.
+Putting an array in order: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Result:   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+Expected: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+:: Passed test_alldups.
+
+:: Compiling test_bigarr.
+:: Running test_bigarr.
+Putting an array in order: [2, 4, 1, 3, 3, 2, 4, 1, 1, 2, 4, 3]
+Result:   [2, 2, 2, 4, 4, 4, 1, 1, 1, 3, 3, 3]
+Expected: [2, 2, 2, 4, 4, 4, 1, 1, 1, 3, 3, 3]
+:: Passed test_bigarr.
+
+:: Compiling test_bigarr_ordered.
+:: Running test_bigarr_ordered.
+Putting an array in order: [2, 2, 2, 4, 4, 4, 1, 1, 1, 3, 3, 3]
+Result:   [2, 2, 2, 4, 4, 4, 1, 1, 1, 3, 3, 3]
+Expected: [2, 2, 2, 4, 4, 4, 1, 1, 1, 3, 3, 3]
+:: Passed test_bigarr_ordered.
+
+:: Compiling test_midarr.
+:: Running test_midarr.
+Putting an array in order: [1, 2, 3, 2, 5, 6, 5]
+Result:   [1, 2, 2, 3, 5, 5, 6]
+Expected: [1, 2, 2, 3, 5, 5, 6]
+:: Passed test_midarr.
+
+:: Compiling test_nodups.
+:: Running test_nodups.
+Putting an array in order: [3, 4, 1, 2, 8, 9, 7]
+Result:   [3, 4, 1, 2, 8, 9, 7]
+Expected: [3, 4, 1, 2, 8, 9, 7]
+:: Passed test_nodups.
+
+:: Compiling test_nodups_ordered.
+:: Running test_nodups_ordered.
+Putting an array in order: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Result:   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Expected: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+:: Passed test_nodups_ordered.
+
+:: Compiling test_smallarr.
+:: Running test_smallarr.
+Putting an array in order: [1, 2, 3, 2, 1]
+Result:   [1, 1, 2, 2, 3]
+Expected: [1, 1, 2, 2, 3]
+:: Passed test_smallarr.
+
+:: Compiling test_smallarr_ordered.
+:: Running test_smallarr_ordered.
+Putting an array in order: [1, 1, 2, 2, 3]
+Result:   [1, 1, 2, 2, 3]
+Expected: [1, 1, 2, 2, 3]
+:: Passed test_smallarr_ordered.
+
+Grade for question exam4-dict: 100/100
+

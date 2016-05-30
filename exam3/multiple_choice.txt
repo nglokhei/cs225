@@ -1,0 +1,210 @@
+Exam 3 Multiple Choice Questions
+
+- These questions may not be in the same order as what you saw on the exam.
+- Your answer is indicated by a '->'
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Objects of type iterator promise to implement each of the following
+except:
+
+Choices:
+   a. `operator=`
+   b. All of these are implemented in an iterator.
+   c. `operator*`
+-> d. `operator+`
+   e. `operator==`
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider the following code:
+
+    #include <iostream>
+    using namespace std;
+
+    class dunno
+    {
+        public:
+
+        int operator()(int f){
+            return f>0 ? f : -f;
+        }
+    };
+
+    void main()
+    {
+        float f = -123.45;
+        dunno aObj;
+        int something_f = aObj(f);
+        cout << "f = " << f << " something_f = " << something_f << endl;
+    }
+
+What happens when you run the above code?
+
+Choices:
+-> a. `f = -123.45 something_f = 123.45`
+   b. None of these is the correct output.
+   c. Compilation error
+   d. `f = 123.45 something_f = -123.45`
+   e. Runtime error
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fill in the blanks so that the following sentence is true: If you have a
+complete tree with 17 nodes, the maximum height ($h$) of the tree is
+\_\_\_\_\_\_ and there are \_\_\_\_\_\_ nodes on level $h$.
+
+Choices:
+   a. First blank is 4, second is 1.
+   b. First blank is 8, second is 2.
+-> c. None of the other options makes the sentence true.
+   d. First blank is 5, second is 2.
+   e. First blank is 8, second is 9.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Which of the following could not be a path in a binary search tree?
+
+Choices:
+   a. `15, 982, 178, 645, 207, 517, 208, 223`
+-> b. `995, 353, 254, 498, 223`
+   c. `492, 125, 418, 197, 223`
+   d. `128, 735, 209, 245, 223`
+   e. None of the options is correct.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose we remove the node containing key 10 from the AVL tree below.
+
+    8 -> {
+        5 -> {
+            3 -> {
+                1 -> {,2},
+                4
+            },
+            6 -> {,7}
+        },
+        10 -> {
+            9,
+            12 -> 11
+        }
+    }
+
+What sequence of rotations will restore the balance of the tree? (Assume
+IOP is used for 2-child removal.)
+
+Choices:
+   a. None of these choices will rebalance the tree.
+   b. `leftRotate` about 9, followed by `rightRotate` about 8.
+   c. `rightRotate` about 8.
+-> d. `rightLeftRotate` about 9, followed by `rightRotate` about 8.
+   e. `leftRotate` about 12, followed by `rightRotate` about 8.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose we would like to build a dictionary that maps a set of student
+names (short strings) to a study group identifier. Which of the
+following would work as a key function for our dictionary?
+
+*Hint: the ordering of the students in the original set should not
+matter.*
+
+Choices:
+-> a. None of the other answers are correct.
+   b. Sort the students' names and then sum the values of the characters in
+      their names.
+   c. Sort and then concatenate the first letters of the students' names.
+   d. Sort each name by character, then form a concatenation of all the sorted
+      names.
+   e. Concatenate the names.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Choose the appropriate running time from the list below.
+
+The variable $n$ represents the number of items (keys, data, or key/data
+pairs) in the structure. In answering this question you should assume
+the best possible implementation given the constraints, and also assume
+that every array is sufficiently large to handle all items (unless
+otherwise stated).
+
+Find the minimum key in a Binary Tree (need not be a BST)
+
+Choices:
+   a. $O(n^2)$
+   b. $O(n\log n)$
+   c. $O(1)$
+-> d. $O(n)$
+   e. $O(\log n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Choose the appropriate running time from the list below.
+
+The variable $n$ represents the number of items (keys, data, or key/data
+pairs) in the structure. In answering this question you should assume
+the best possible implementation given the constraints, and also assume
+that every array is sufficiently large to handle all items (unless
+otherwise stated).
+
+Count the number of nodes that are between 2 given keys in a Binary
+Search Tree.
+
+Choices:
+   a. $O(n^2)$
+   b. $O(n\log n)$
+   c. $O(\log n)$
+   d. $O(1)$
+-> e. $O(n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Choose the appropriate running time from the list below.
+
+The variable $n$ represents the number of items (keys, data, or key/data
+pairs) in the structure. In answering this question you should assume
+the best possible implementation given the constraints, and also assume
+that every array is sufficiently large to handle all items (unless
+otherwise stated).
+
+Remove a single key from a height balanced Binary Search Tree.
+
+Choices:
+   a. $O(n^2)$
+-> b. $O(\log n)$
+   c. $O(1)$
+   d. $O(n)$
+   e. $O(n\log n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Choose the appropriate running time from the list below.
+
+The variable $n$ represents the number of items (keys, data, or key/data
+pairs) in the structure. In answering this question you should assume
+the best possible implementation given the constraints, and also assume
+that every array is sufficiently large to handle all items (unless
+otherwise stated).
+
+Build a BST with keys that are the numbers between 0 and $n$, in that
+order, by repeated insertions into the tree.
+
+Choices:
+   a. $O(n)$
+-> b. $O(n^2)$
+   c. $O(1)$
+   d. $O(\log n)$
+   e. $O(n\log n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+

@@ -1,0 +1,236 @@
+Exam 2 Multiple Choice Questions
+
+- These questions may not be in the same order as what you saw on the exam.
+- Your answer is indicated by a '->'
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider the following class definitions:
+
+    class Restaurant{
+    public:
+        int rate() const;
+    private:
+        double rating;
+    };
+
+    class Chipotle: public Restaurant {
+    public:
+        int rateBad();
+    };
+
+Where could the assignment `rating = 3.0;` appear for the private
+variable `rating`?
+
+Choices:
+-> a. `rate()` can make the assignment, but `rateBad()` cannot.
+   b. The answer to this question cannot be determined from the given code.
+   c. Both `rate()` and `rateBad()` can make the assignment.
+   d. `rateBad()` can make the assignment, but `rate()` cannot.
+   e. Neither `rate()` nor `rateBad()` can make the assignment.
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+What will be the output of the following program?
+
+    class Base
+    {
+        public:
+            virtual ~Base() {cout << "Destructing Base "; }
+    };
+
+    class Derived:public Base
+    {
+        public:
+            virtual ~Derived() { cout<< "Destructing Derived "; }
+    }; 
+
+    int main()
+    {
+        Base* b = new Derived;     
+        delete b;
+    }
+
+Choices:
+   a. `"Destructing Derived Destructing Base "`
+-> b. `"Destructing Base Destructing Derived "`
+   c. `"Destructing Derived "`
+   d. `"Destructing Base "`
+   e. None of the above
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Using the templatized `MyPair` class defined in lecture, and the
+standard `string` class, which of the following correctly declares a
+variable called `closet` which is a dynamic array of `MyPairs` whose
+parameterized type is a `string` pointer?
+
+Choices:
+   a. ```
+      MyPair<string> * closet;
+      ```
+   b. More than one of the other options are correct.
+   c. ```
+      MyPair * closet = new string[size]
+      ```
+-> d. None of the other options is correct.
+   e. ```
+      MyPair<string *> * closet;
+      ```
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In implementing Queue ADT, using which of the following data structure
+gives best asymptotic runtime for `enqueue` and `dequeue`? (Assume best
+possible implementation for queue using provided data structure)
+
+Choices:
+   a. Singly linked list with head pointer only.
+   b. Doubly linked list with head pointer only.
+   c. Exactly two of the other options are correct.
+   d. Doubly linked list with head and tail pointer.
+   e. Singly linked list with head and tail pointer.
+-> f. None of the other options are correct.
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose a `std::stack<int> s` contains 6 elements `1, 2, 3, 4, 5, 6`
+(pushed in that order). What is the result of executing the following
+code snippet, assuming all required libraries are included?
+
+    for(int i = 0; i<6; i++){
+        if(i%2==1) {
+            s.push(s.top());
+            s.pop();
+        }
+    }
+
+Choices:
+   a. The even numbers in `s` are reversed.
+   b. The top half of `s` contains even elements and the bottom half of `s`
+      contains odd elements.
+   c. The odd numbers in `s` are reversed.
+   d. The elements `s` are reversed.
+-> e. `s` remains the same.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider this simple example.
+
+    int * a;
+    int * b;
+    a = new int(5);
+    b = a;
+    cout << *b << endl;
+    delete a; 
+    a = NULL; 
+    b = NULL;
+
+What is the result of executing these statements if you assume the
+standard `iostream` library has been included?
+
+Choices:
+   a. This code has a memory leak.
+   b. None of the other options describes the behavior of this code.
+-> c. `5` is sent to standard out.
+   d. This code results in undefined runtime behavior.
+   e. The memory address of `b` is sent to standard out.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Which of the following characterizes an Abstract Data Type?
+
+Choices:
+   a. A description of the implementation of a data structure.
+   b. A description of the functionality of a data structure.
+-> c. Any class containing at least one pure virtual function.
+   d. None of these options is correct.
+   e. A collection of class data members.
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+What is the total tightest worst case running time of adding $n$
+distinct elements to a queue that is implemented using 2 stacks, if no
+other operations are performed?
+
+Choices:
+   a. $O(n^2)$
+   b. None of the above
+-> c. $O(n)$
+   d. $O(\log n)$
+   e. $O(n \log n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+We have implemented the Stack ADT as an array. Every time the array is
+full, you resize the array creating a new array that can hold 3 elements
+more than the previous array and copy values over from the old array.
+What is the total running time for $n$ pushes to the stack.
+
+Choices:
+   a. $O(n^2)$.
+   b. $O(\log n)$.
+-> c. $O(n)$.
+   d. $1/3 \* O(n)$.
+   e. $O(1)$.
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider a class `List` that implements an unordered list. Suppose it
+has as its representation a singly linked list with a `head` and `tail`
+pointer (i.e. pointers to the first and last nodes in the list).
+
+Given that representation, which of the following operations could be
+implemented in $O(1)$ time?
+
+I. Insert item at the front of the list  
+II. Insert item at the rear of the list  
+III. Delete front item from list  
+IV. Delete rear item from list
+
+Choices:
+   a. I, II and IV
+   b. I and II
+   c. All of them
+   d. I and III
+-> e. I, II and III
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+What are the tightest time complexities of finding 8th element from
+beginning and 8th element from end in a singly linked list? Let $n$ be
+the number of nodes in the linked list; you may assume that $n \\gg 8$.
+
+Choices:
+   a. None of the options is correct
+   b. $O(n)$ and $O(1)$
+   c. $O(1)$ and $O(1)$
+-> d. $O(1)$ and $O(n)$
+   e. $O(n)$ and $O(n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In a sorted doubly linked list of size $n^2$, time taken to calculate
+the sum of all elements in the list is
+
+Choices:
+   a. $O(1)$.
+   b. $O(n \log n)$.
+   c. $O(n^2)$.
+   d. $O(\log n)$.
+-> e. $O(n)$.
+Your answer was incorrect.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+

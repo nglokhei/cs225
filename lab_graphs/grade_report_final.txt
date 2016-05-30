@@ -1,0 +1,28 @@
+Grading r45095 by lng8 committed on Sun May  1 18:49:06 CDT 2016
+Monad Autograder
+Testing lab_graphs at 2016-05-02 00:19:24
+
+"A lot of the things that I say are true, but I don't actually mean them." ~ Alexey Stepanov
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+minWeight_OneEdge_ReturnValue . [10 pts] - passed
+minWeight_OneEdge_EdgeLabel . . [10 pts] - passed
+minWeight_MultiEdge_ReturnValue [10 pts] - passed
+minWeight_MultiEdge_EdgeLabels  [15 pts] - passed
+minPath_OneEdge_ReturnValue . . [10 pts] - passed
+minPath_OneEdge_EdgeLabel . . . [10 pts] - passed
+minPath_MultiEdge_ReturnValue . [10 pts] - passed
+minPath_MultiEdge_EdgeLabels  . [10 pts] - passed
+kruskal_all . . . . . . . . . . [15 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

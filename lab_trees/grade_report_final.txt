@@ -1,0 +1,23 @@
+Grading r25007 by lng8 committed on Fri Mar 11 18:38:57 CST 2016
+Monad Autograder
+Testing lab_trees at 2016-03-14 00:15:16
+
+"If you think you can do it all, you're thinking too small." ~ Michael Lopp
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_isOrdered  . [33 pts] - passed
+test_mirror . . . [33 pts] - passed
+test_printPaths . [34 pts] - passed
+test_sumDistances [25 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 125
+

@@ -1,0 +1,28 @@
+Grading r36025 by lng8 committed on Sat Apr  9 00:21:10 CDT 2016
+Monad Autograder
+Testing lab_avl at 2016-04-11 00:19:23
+
+"Honestly, if you don't fit in, then you're probably doing the right thing." ~ LIGHTS
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_oneElement  . . . [8 pts]  - passed
+test_simpleRotateLeft  [8 pts]  - passed
+test_simpleRotateRight [8 pts]  - passed
+test_threeLeftRotates  [8 pts]  - passed
+test_threeRightRotates [8 pts]  - passed
+test_manyRotations . . [17 pts] - passed
+test_manyInserts . . . [17 pts] - passed
+test_manyRemovals  . . [17 pts] - passed
+test_valgrind (asan) . [9 pts]  - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

@@ -1,0 +1,8 @@
+Grading r10231 by tolar2 committed on Mon Feb  8 00:34:40 CST 2016
+Monad Autograder
+Testing mp2 at 2016-02-09 00:19:17
+
+"A computer will do what you tell it to do, but that may be much different from what you had in mind" ~ Joseph Weizenbaum
+
+Setting up test environment...
+Error: /dev/shm/cs225student/autograder/temp/mp2/scene.h does not exist.

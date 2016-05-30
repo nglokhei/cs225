@@ -1,0 +1,236 @@
+Exam 4 Multiple Choice Questions
+
+- These questions may not be in the same order as what you saw on the exam.
+- Your answer is indicated by a '->'
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+For a minHeap implementation, assume we use the 0th index of the array
+to store the root (instead of index 1). Given an element at position
+$i$, what would be the position of its left child (if one exists)?
+
+Choices:
+-> a. $2i + 1$
+   b. $2i$
+   c. $2i + 2$
+   d. None of other options
+   e. $2i - 1$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider the following disjoint sets.
+
+    \tikz [tree layout, minimum number of children=2, sibling distance=15mm, level distance=11mm,font=\Large,>=latex]
+    \graph {
+        1 <- {
+            0,
+            2 <- {
+                3,
+                4
+            }
+        },
+        7 <- {
+            6 <- {
+                5,
+                8
+            }
+        }
+    };
+
+Using our array implementation of disjoint sets with union-by-size and
+path compression, after the operations `Find(3)`,
+`Union(Find(4), Find(8))` and `Find(5)`, the resulting array is named
+`result`. Which of the following statements is correct? (Hint: in the
+array implementation of disjoint sets, keys are implicitly stored in
+array indices)
+
+Choices:
+   a. `result[4]` is 1 and `result[6]` is 7
+   b. None of these are correct
+   c. `result[3]` is 2 and `result[7]` is 1
+   d. `result[2]` is 1 and `result[4]` is 2
+-> e. `result[4]` is 1 and `result[6]` is 1
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider this B-Tree:
+
+    \begin{tikzpicture}[thick,>=latex]
+    \tikzstyle{every node}=[rectangle split, rectangle split horizontal,rectangle split ignore empty parts,draw,font=\Large]
+    \tikzstyle{level 1}=[sibling distance=80pt]
+    \node {12 \nodepart{two} 31} [->]
+      child {node {2 \nodepart{two} 6}}
+      child {node {20 \nodepart{two} 25}}
+      child {node {33 \nodepart{two} 37 \nodepart{three} 42 \nodepart{four} 50}}
+    ;
+    \end{tikzpicture}
+
+How many disk seeks are required during the execution of `Find(42)`?
+Assume that none of the data exists in memory when the call is made.
+
+Choices:
+   a. 5
+-> b. 2
+   c. 1
+   d. 4
+   e. The number of disk seeks cannot be determined because we do not know the
+      order of the tree.
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Which of the following trees is a Huffman Tree for the following string
+of characters?
+
+    b a b a b a c d c d c d
+
+Choices:
+   a.     \tikz [tree layout, minimum number of children=2, sibling distance=15mm, level distance=11mm,font=\Large,>=latex]
+          \graph {
+            n1 [as=\#] -> {
+                d,
+                n2 [as=\#] -> {
+                    c,
+                    n3 [as=\#] -> {
+                        b,
+                        a
+                    }
+                }
+            }
+          };
+   b.     \tikz [tree layout, minimum number of children=2, sibling distance=15mm, level distance=11mm,font=\Large,>=latex]
+          \graph {
+            n1 [as=\#] -> {
+                a,
+                n2 [as=\#] -> {
+                    n3 [as=\#] -> {
+                        d,
+                        c
+                    },
+                    b
+                }
+            }
+          };
+   c. None of the other answers
+-> d.     \tikz [tree layout, minimum number of children=2, sibling distance=15mm, level distance=11mm,font=\Large,>=latex]
+          \graph {
+            n1 [as=\#] -> {
+                n2 [as=\#] -> {
+                    a,
+                    b
+                },
+                n3 [as=\#] -> {
+                    c,
+                    d
+                }
+            }
+          };
+   e.     \tikz [tree layout, minimum number of children=2, sibling distance=15mm, level distance=11mm,font=\Large,>=latex]
+          \graph {
+            n1 [as=\#] -> {
+                n2 [as=\#] -> {
+                    n3 [as=\#] -> {
+                        c,
+                        d
+                    },
+                    a
+                },
+                b
+            }
+          };
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The `std::map` in C++ is:
+
+Choices:
+   a. None of the options is correct
+   b. Iterator
+   c. Abstract Base Class
+   d. Operator
+-> e. Abstract Data Type
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are several factors that affect the efficiency of lookup
+operations in a hash table. Which of the following is not one of those
+factors?
+
+Choices:
+   a. Quality of the hash function
+-> b. Size of elements stored in the hash table
+   c. Number of buckets in the hash table
+   d. Number of elements stored in the hash table
+   e. All of these factors affect the efficiency of hash table lookups
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose you want to search an AVL tree holding integer keys for the
+smallest key that is a multiple of 7, if it exists. Which of the
+following is the tightest bound on the worst-case running time of the
+best possible algorithm?
+
+Choices:
+   a. $O(\log n)$
+   b. $O(n^2)$
+   c. $O(n\log n)$
+-> d. $O(n)$
+   e. None of the other answers
+   f. $O(1)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In our uptree disjoint sets implementation, suppose we employ
+union-by-size and no path compression. The running times of the relevant
+functions are:
+
+Choices:
+   a. None of the other answers
+   b. $O(n)$ for `setUnion` and $O(1)$ for `Find`
+   c. $O(\log n)$ for `setUnion` and $O(\log n)$ for `Find`
+-> d. $O(1)$ for `setUnion` and $O(\log n)$ for `Find`
+   e. $O(n)$ for `setUnion` and $O(n\log n)$ for `Find`
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+What is the worst case running time of `removeMin` on a heap? In
+answering this question you should assume the best possible
+implementation given the constraints, and also assume that every array
+is sufficiently large to handle all items (unless otherwise stated). The
+variable $n$ represents the number of items.
+
+Choices:
+   a. None of the other options
+   b. $O(n)$
+   c. $O(1)$
+   d. $O(n^2)$
+-> e. $O(\log n)$
+   f. $O(n\log n)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose you are given a list of size $n$ and another list of size $m$,
+where $m &lt; n$. You want to determine if all elements that are in the
+size $m$ list are present in the list of size $n$. What is the best time
+complexity of **CREATING** a hashtable such that you will be able to
+solve the problem even with duplicate elements.
+
+Choices:
+   a. None of the other options
+   b. $O(mn)$
+   c. $O(n)$
+   d. $O(m \log n)$
+   e. $O(n + m)$
+-> f. $O(m)$
+Your answer was correct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
